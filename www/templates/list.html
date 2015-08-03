@@ -1,0 +1,43 @@
+
+<span class="badge badge-assertive">
+	<a class="item item-icon-left" href="#/p/insert"> {{p.description}}</a>
+</span>
+
+
+
+<ion-list>
+  <ion-item ng-repeat="p in products">
+    <a class="item item-icon-left" href="#">
+        <i class="icon ion-person-stalker"></i>
+         <a class="item item-icon-left" href="#/p/update/{{p._id}} "> {{p.title}}</a>
+        <span class="badge badge-assertive">{{p.description}}</span>
+  </ion-item>
+
+ 
+ 
+</ion-list>
+
+ <ion-infinite-scroll on-infinite="loadMore()" distance="5%" immediate-check="false" ng-if="noMoreItemsAvailable"> 
+  	</ion-infinite-scroll>   
+
+<br>
+<br>
+<br>
+	
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
